@@ -4,8 +4,11 @@ def hello_t(arr)
     while i < arr.length
       yield(arr[i])
       i = i + 1
+    end
+    arr
+  else
+    puts "Hey! No block was given!"
   end
-  arr
 end
 
 # call your method here!
